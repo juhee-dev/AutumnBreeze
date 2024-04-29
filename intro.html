@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("p, button").fadeOut(0);
+        $("#intro, #music, #social").mouseenter(function() {
+          $(this).fadeTo(400, 0.3);
+        });
+        $("#music, #social").mouseleave(function() {
+          $(this).fadeTo(400, 1);
+        });
+        $("#click").mouseenter(function() {
+          $(this).fadeTo(300, 0.3);
+        });
+        $("#click").mouseleave(function() {
+          $(this).fadeTo(300, 1);
+        });
+        $("#click").click(function() {
+          $("p, button").fadeToggle(1000);
+        });
+        $("#welcome, #youCan, #haveA").mouseenter(function() {
+          $(this).fadeTo(300, 0.6);
+        });
+        $("#welcome, #youCan, #haveA").mouseleave(function() {
+          $(this).fadeTo(300, 1);
+        });
+        $("#welcome, #youCan, #haveA").click(function() {
+          $(this).toggleClass("addStyle");
+        });
+      });
+      function whatIs() {
+        alert("It's name, Lo-Fi comes from the term 'low-Fidelity'.");
+      }
+    </script>
+    <style>
+    body {
+      text-align: center;
+      background: linear-gradient(to top, #0f0c00, #998666);
+      color: white;
+    }
+    #logo {
+      width: 400px; height: 120px;
+    }
+    #hr {align: center;}
+    #intro, #music, #social {width:95px; height: 35px; margin: 25px 0 25px 0;}
+    #article1 {
+      background-color: rgba(255, 255, 255, 0.3);
+      height: 600px; margin: 0 10% 5%;
+    }
+    #welcome, #youCan, #haveA {font-size: 22px;}
+    .addStyle {
+      font-weight: bold; color: #0f0c00;
+    }
+    i {
+      font-family: "Times New Roman";
+      font-size: 20px;
+    }
+    #whatIs {
+      font-size: 15px; font-family: "Times New Roman";
+    }
+    #intro {
+      opacity: 0.4;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img id="logo" src="logo.png"></a>
+      <hr style="width: 600px"></hr>
+      <div class="menu">
+        <span><a href="intro.html"><img id="intro" src="intro.png"></a></span>
+        <span><a href="music.html"><img id="music" src="music.png"></a></span>
+        <span><a href="social.html"><img id="social" src="social.png"></a></span>
+      </div>
+    </header>
+    <section>
+      <div id="article1">
+        <br><br>
+        <i id="click">Click!</i>
+        <br><br><br><br><br>
+        <p><i id="welcome">Welcome to AUTUMN BREEZE.</i></p>
+        <br><br><br>
+        <p><i id="youCan">On this site, you can find Lo-Fi music by type.</i></p>
+        <br><br><br>
+        <p><i id="haveA">Have a good time!</i></p>
+        <br><br><br>
+        <button type="button" onclick="whatIs()" id="whatIs">What is Lo-Fi?</button>
+      </div>
+    </section>
+    <footer>
+      <sub style="color: #8c7e47;">&copy; 2019 KJH</sub>
+    </footer>
+  </body>
+</html>

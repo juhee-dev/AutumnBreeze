@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AUTUMN BREEZE</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#intro, #music, #social").mouseenter(function() {
+          $(this).fadeTo(400, 0.3);
+        });
+        $("#intro, #music, #social").mouseleave(function() {
+          $(this).fadeTo(400, 1);
+        });
+      });
+    </script>
+    <style>
+      body {
+        text-align: center;
+        background: linear-gradient(to top, #0f0c00, #998666);
+        color: white;
+      }
+      #logo {
+        width: 400px; height: 120px;
+      }
+      #hr {align: center;}
+      #intro, #music, #social {width:95px; height: 35px; margin: 25px 0 25px 0;}
+      #img {width: 80%;}
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img id="logo" src="logo.png"></a>
+      <hr style="width: 600px"></hr>
+      <div class="menu">
+        <span><a href="intro.html"><img id="intro" src="intro.png"></a></span>
+        <span><a href="music.html"><img id="music" src="music.png"></a></span>
+        <span><a href="social.html"><img id="social" src="social.png"></a></span>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <img id="img" src="music.jpg" alt="image">
+      </div>
+    </section>
+    <footer>
+      <sub style="color: #8c7e47;">&copy; 2019 KJH</sub>
+    </footer>
+  </body>
+</html>

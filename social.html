@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AUTUMN BREEZE</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#intro, #music, #social").mouseenter(function() {
+          $(this).fadeTo(400, 0.3);
+        });
+        $("#intro, #music").mouseleave(function() {
+          $(this).fadeTo(400, 1);
+        });
+      });
+    </script>
+    <style>
+      body {
+        text-align: center;
+        background: linear-gradient(to top, #0f0c00, #998666);
+        color: white;
+      }
+      #logo {
+        width: 400px; height: 120px;
+      }
+      #hr {align: center;}
+      #intro, #music, #social {width:95px; height: 35px; margin: 25px 0 25px 0;}
+      #social {
+        opacity: 0.4;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img id="logo" src="logo.png"></a>
+      <hr style="width: 600px"></hr>
+      <div class="menu">
+        <span><a href="intro.html"><img id="intro" src="intro.png"></a></span>
+        <span><a href="music.html"><img id="music" src="music.png"></a></span>
+        <span><a  href="social.html"><img id="social" src="social.png"></a></span>
+      </div>
+    </header>
+
+    <section>
+      <iframe style="float: left; width: 60%; height: 600px; margin: 0 0 5% 10%;" src="https://blog.naver.com/my_everything" frameborder="0"></iframe>
+    </section>
+    <aside>
+        <iframe style="float: left; width: 20%; height: 150px;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/330782971&color=%236c5c5c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe style="float: left; width: 20%; height: 150px;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/518923680&color=%23dc9c7c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe style="float: left; width: 20%; height: 150px;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/634405317&color=%23346462&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe style="float: left; width: 20%; height: 150px;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/565158366&color=%236e7e96&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </aside>
+
+    <footer style="clear: both;">
+      <sub style="color: #8c7e47;">&copy; 2019 KJH</sub>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#intro, #music, #social").mouseenter(function() {
+          $(this).fadeTo(400, 0.3);
+        });
+        $("#intro, #social").mouseleave(function() {
+          $(this).fadeTo(400, 1);
+        });
+        $(".article").mouseenter(function() {
+          $(this).fadeTo(300, 0.6);
+        });
+        $(".article").mouseleave(function() {
+          $(this).fadeTo(300, 1);
+        });
+      });
+    </script>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Times New Roman";
+        background: linear-gradient(to top, #0f0c00, #998666);
+        color: white;
+      }
+      #logo {
+        width: 400px; height: 120px;
+      }
+      #hr {align: center;}
+      #intro, #music, #social {width:95px; height: 35px; margin: 25px 0 25px 0;}
+      section {
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 70%; margin: 0 10% 5%;
+        overflow: auto;
+      }
+      .article {
+        width: 24%; height: auto;
+        background-color: white; color: #998666;
+        font-size: 18px;
+        float: left; padding: 8px 0;
+      }
+      .sounds {
+        width: 80%; margin: 1%; padding: 1%;
+      }
+      #music {
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img id="logo" src="logo.png"></a>
+      <hr style="width: 600px"></hr>
+      <div class="menu">
+        <span><a href="intro.html"><img id="intro" src="intro.png"></a></span>
+        <span><a href="music.html"><img id="music" src="music.png"></a></span>
+        <span><a href="social.html"><img id="social" src="social.png"></a></span>
+      </div>
+    </header>
+    <section>
+      <br><p style="font-size: 20px; font-weight: bold;"><i>List</i></p>
+      <a href="lofi1.html"><div class="article" style="margin: 3% 5% 5% 6.5%; background-color: #5e6e98; color: #dbe2f7;">Sounds without voice<img src="lofi1.jpg" class="sounds"></div></a>
+      <a href="lofi2.html"><div class="article" style="margin: 3% 2% 5%; background-color: #1f4a29; color: #a4c6ac;">Jazz sounds<img src="lofi2.jpg" class="sounds"></div></a>
+      <a href="lofi3.html"><div class="article" style="margin: 3% 5% 5%; background-color: #5d473f; color: #c9b0a6;"><t>Nature sounds</t><img src="lofi3.jpg" class="sounds"></div></a>
+    </section>
+    <footer>
+      <sub style="color: #8c7e47;">&copy; 2019 KJH</sub>
+    </footer>
+  </body>
+</html>

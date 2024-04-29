@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#intro, #music, #social").mouseenter(function() {
+          $(this).fadeTo(400, 0.3);
+        });
+        $("#intro, #social").mouseleave(function() {
+          $(this).fadeTo(400, 1);
+        });
+      });
+    </script>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Times New Roman"; font-weight: thin;
+        background: linear-gradient(to top, #0f0c00, #998666);
+        color: white;
+      }
+      #logo {
+        width: 400px; height: 120px;
+      }
+      #hr {align: center;}
+      #intro, #music, #social {width:95px; height: 35px; margin: 25px 0 25px 0;}
+      section {
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 70%; margin: 0 10% 5%;
+        overflow: auto;
+        font-size: 17px;
+      }
+      .title {
+        font-size: 20px; font-weight: bold;
+        transition: color;
+        transition-duration: 1s;
+      }
+      .title:hover {
+        color: #4f3e21;
+      }
+      .article {
+        float: left; overflow: auto;
+        margin-left: 8.5%; margin-bottom: 80px;
+      }
+      #music {
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img id="logo" src="logo.png"></a>
+      <hr style="width: 600px"></hr>
+      <div class="menu">
+        <span><a href="intro.html"><img id="intro" src="intro.png"></a></span>
+        <span><a href="music.html"><img id="music" src="music.png"></a></span>
+        <span><a  href="social.html"><img id="social" src="social.png"></a></span>
+      </div>
+    </header>
+    <section>
+      <br>
+      <p class="title">Nature sounds</p>
+      <br><br>
+      <div class="article">
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/JXyv1D7FErc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>Idealism - Controlla
+      </div>
+      <div class="article">
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/Hge7dO80K2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>Kupla - nightlights
+      </div>
+      <div class="article">
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/c_3qxPEaEPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>saib. - Spring Waltz
+      </div>
+      <div class="article">
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/HgUtQxch694" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>Squareface — Bird Calls LP
+      </div>
+      <br>
+      <div style="clear: both;">
+        <a href="music.html"><i><ins style="color: #c8bdab;">back</ins></i></a>
+      </div>
+      <br><br>
+    </section>
+    <footer>
+      <sub style="color: #8c7e47;">&copy; 2019 KJH</sub>
+    </footer>
+  </body>
+</html>
